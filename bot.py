@@ -1,13 +1,23 @@
 import discord
 import requests
 
-# Create a Discord client
-client = discord.Client()
+# Define the intents
+intents = discord.Intents.default()
+
+# Create a Discord client with the intents
+client = discord.Client(intents=intents)
 
 # Define predefined responses
 responses = {
     "hello": "Hello! How can I assist you?",
-    "help": "Sure, I can help you with that. What do you need assistance with?",
+    "goodbye": "Goodbye! Have a great day!",
+    "help": "Available commands:\n"
+            "!hello - Say hello to the bot\n"
+            "!goodbye - Bid farewell to the bot\n"
+            "!weather [city] - Get the current weather for a specified city\n"
+            "!reminder - Set a reminder for tomorrow at 10:00 AM\n"
+            "!reservation - Confirm a reservation for Friday at 7:00 PM\n"
+            "For other inquiries, feel free to ask!",
     "weather": "The weather today is sunny with a high of 75°F.",
     "reminder": "Your reminder has been set for tomorrow at 10:00 AM.",
     "reservation": "Your reservation has been confirmed for Friday at 7:00 PM."
@@ -25,7 +35,7 @@ def dynamic_response(message):
 
 # Function to get current weather information using OpenWeatherMap API
 def get_weather(city):
-    api_key = 'YOUR_OPENWEATHERMAP_API_KEY'
+    api_key = 'bef925617a4fe002562b4ac7e642b89a'
     url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=imperial'
     response = requests.get(url)
     if response.status_code == 200:
@@ -72,4 +82,4 @@ async def on_message(message):
     await message.channel.send(dynamic_response_text)
 
 # Run the Discord bot with the specified token
-client.run('YOUR_DISCORD_BOT_TOKEN')
+client.run('MTIyMjY2MDA0MDk1NjE4MjYzOQ.G3oRCO.bJH26SPqEnN4OAQnepys4400qTuBL-EXVLsNNU')
