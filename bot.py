@@ -82,4 +82,4 @@ async def on_message(message):
     await message.channel.send(dynamic_response_text)
 
 # Run the Discord bot with the specified token
-client.run('MTIyMjY2MDA0MDk1NjE4MjYzOQ.G3oRCO.bJH26SPqEnN4OAQnepys4400qTuBL-EXVLsNNU')
+client.run('Your_token_here')
