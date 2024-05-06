@@ -35,7 +35,7 @@ def dynamic_response(message):
 
 # Function to get current weather information using OpenWeatherMap API
 def get_weather(city):
-    api_key = 'weather API key here'
+    api_key = 'YOUR_OPENWEATHERMAP_API_KEY'
     url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=imperial'
     response = requests.get(url)
     if response.status_code == 200:
@@ -82,4 +82,4 @@ async def on_message(message):
     await message.channel.send(dynamic_response_text)
 
 # Run the Discord bot with the specified token
-client.run('Your_token_here')
+client.run('YOUR_DISCORD_BOT_TOKEN')
