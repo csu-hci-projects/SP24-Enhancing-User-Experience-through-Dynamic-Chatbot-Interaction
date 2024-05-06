@@ -39,5 +39,6 @@ This is a simple demonstration of a Discord chatbot and can be further customize
 Make sure to keep your Discord bot token and OpenWeatherMap API key secure and do not share them publicly.
 
 The weather command is the difficulty spike and frustration with the chatbot
+Reservation is suppose to have a preset time and won't except dates and time, this is intended.
 
 You will have to create a discord bot token as using mine will reset the token and break the bot!
