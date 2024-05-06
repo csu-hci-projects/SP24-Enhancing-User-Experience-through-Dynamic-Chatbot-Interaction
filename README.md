@@ -32,7 +32,12 @@ Typing weather [city] (e.g., weather New York) will fetch current weather inform
 Typing reminder will confirm the setting of a reminder for the user.
 Typing reservation will confirm the booking of a reservation for the user.
 To use the !weather command, type !weather [city] in any channel where the bot is present.
+When messaging the bot make sure to @[botname] ![command] fill in with the appropriate name and command.
 
 Additional Notes
 This is a simple demonstration of a Discord chatbot and can be further customized and extended to meet specific requirements.
 Make sure to keep your Discord bot token and OpenWeatherMap API key secure and do not share them publicly.
+
+The weather command is the difficulty spike and frustration with the chatbot
+
+You will have to create a discord bot token as using mine will reset the token and break the bot!
