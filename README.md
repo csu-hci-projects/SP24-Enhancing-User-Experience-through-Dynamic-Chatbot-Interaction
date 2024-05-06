@@ -16,9 +16,12 @@ Clone or download the repository to your local machine.
 Install the required Python packages using conda install conda-forge::discord.py
 
 Configuration
+
 Obtain a Discord bot token by creating a new bot application on the Discord Developer Portal: https://discord.com/developers/applications
 Set the bot to have Admin and then copy the URL into a browser and invite it to the server
+
 Obtain an OpenWeatherMap API key by signing up for an account on the OpenWeatherMap website: https://home.openweathermap.org/users/sign_up
+
 Replace YOUR_DISCORD_BOT_TOKEN with your Discord bot token in the bot.py file.
 Replace YOUR_OPENWEATHERMAP_API_KEY with your OpenWeatherMap API key in the bot.py file.
 
