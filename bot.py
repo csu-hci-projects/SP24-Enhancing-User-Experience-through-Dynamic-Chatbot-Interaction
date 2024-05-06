@@ -35,7 +35,7 @@ def dynamic_response(message):
 
 # Function to get current weather information using OpenWeatherMap API
 def get_weather(city):
-    api_key = 'bef925617a4fe002562b4ac7e642b89a'
+    api_key = 'weather API key here'
     url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=imperial'
     response = requests.get(url)
     if response.status_code == 200:
