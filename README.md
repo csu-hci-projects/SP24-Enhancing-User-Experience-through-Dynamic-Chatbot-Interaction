@@ -13,7 +13,7 @@ Discord bot token
 OpenWeatherMap API key
 Setup
 Clone or download the repository to your local machine.
-Install the required Python packages using pip: pip install -r requirements.txt
+Install the required Python packages using conda install conda-forge::discord.py
 
 Configuration
 Obtain a Discord bot token by creating a new bot application on the Discord Developer Portal: https://discord.com/developers/applications
